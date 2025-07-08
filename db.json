@@ -29,6 +29,51 @@
       "id": "10",
       "nom": "Performance Web",
       "description": "Optimisation des performances d'applications web"
+    },
+    {
+      "id": "11",
+      "nom": "Introduction à Angular",
+      "description": "Les bases du framework Angular pour débutants"
+    },
+    {
+      "id": "12",
+      "nom": "React Avancé",
+      "description": "Hooks, Context API et performance avec React"
+    },
+    {
+      "id": "13",
+      "nom": "TypeScript Moderne",
+      "description": "Maîtriser TypeScript dans des projets d'envergure"
+    },
+    {
+      "id": "14",
+      "nom": "Docker pour les Développeurs",
+      "description": "Conteneuriser et déployer vos apps avec Docker"
+    },
+    {
+      "id": "15",
+      "nom": "Git et GitHub",
+      "description": "Gestion de version collaborative avec Git et GitHub"
+    },
+    {
+      "id": "16",
+      "nom": "Bases de Données SQL",
+      "description": "Conception et requêtes SQL pour développeurs"
+    },
+    {
+      "id": "17",
+      "nom": "NoSQL avec MongoDB",
+      "description": "Travailler avec des bases de données orientées documents"
+    },
+    {
+      "id": "18",
+      "nom": "CI/CD avec GitHub Actions",
+      "description": "Mise en place de pipelines de déploiement automatisés"
+    },
+    {
+      "id": "19",
+      "nom": "Accessibilité Web",
+      "description": "Créer des applications web accessibles à tous"
     }
   ],
   "users": [
