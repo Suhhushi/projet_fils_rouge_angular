@@ -22,4 +22,13 @@ export class CourseDetailComponent implements OnInit {
       course => this.course = course
     );
   }
+
+  getCurrentDate(): string {
+  const today = new Date();
+  return today.toLocaleDateString('fr-FR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
 }

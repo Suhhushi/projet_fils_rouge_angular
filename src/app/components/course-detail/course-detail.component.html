@@ -1,19 +1,85 @@
-
-    <div class="card" *ngIf="course">
-      <div class="card-header d-flex justify-content-between">
-        <h3>{{ course.nom }}</h3>
-        <div>
-          <button class="btn btn-warning me-2" 
-                  [routerLink]="['/course', course.id, 'edit']">
-            Modifier
-          </button>
-          <button class="btn btn-secondary" routerLink="/courses">
-            Retour
-          </button>
+<div class="row justify-content-center" *ngIf="course">
+  <div class="col-lg-10 col-md-12">
+    <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+      <!-- Header avec gradient et design moderne -->
+      <div class="card-header bg-gradient text-dark border-0 py-4" 
+           style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+            <div class="icon-container me-3">
+              <i class="fas fa-book-open fa-2x text-warning"></i>
+            </div>
+            <div>
+              <h3 class="mb-0 fw-bold">{{ course.nom }}</h3>
+              <small class="opacity-75">
+                <i class="fas fa-calendar-alt"></i>
+                Cours #{{ course.id }} • Créé le {{ getCurrentDate() }}
+              </small>
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-warning btn-lg px-4 shadow-sm" 
+                    [routerLink]="['/course', course.id, 'edit']">
+              <i class="fas fa-edit"></i>Modifier
+            </button>
+            <button class="btn btn-secondary btn-lg px-4" routerLink="/courses">
+              <i class="fas fa-arrow-left"></i>Retour
+            </button>
+          </div>
         </div>
       </div>
-      <div class="card-body">
-        <p class="card-text">{{ course.description }}</p>
-        <small class="text-muted">ID: {{ course.id }}</small>
+
+      <!-- Corps avec contenu enrichi -->
+      <div class="card-body p-5">
+        <div class="row">
+          <div class="col-md-8">
+            <h5 class="text-primary mb-3">
+              <i class="fas fa-info-circle"></i>Description du cours
+            </h5>
+            <p class="card-text lead text-dark lh-lg" style="font-size: 1.1rem;">
+              {{ course.description }}
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="bg-light rounded-3 p-4">
+              <h6 class="text-dark fw-bold mb-3">
+                <i class="fas fa-chart-bar text-primary"></i>Informations
+              </h6>
+              <div class="mb-3">
+                <small class="text-muted d-block">Identifiant</small>
+                <span class="badge bg-primary fs-6">#{{ course.id }}</span>
+              </div>
+              <div class="mb-3">
+                <small class="text-muted d-block">Statut</small>
+                <span class="badge bg-success fs-6">
+                  <i class="fas fa-check-circle me-1"></i>Actif
+                </span>
+              </div>
+              <div class="mb-3">
+                <small class="text-muted d-block">Niveau</small>
+                <span class="badge bg-info fs-6">Débutant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer avec actions supplémentaires -->
+      <div class="card-footer bg-light border-0 py-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex gap-3">
+            <button class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-heart me-1"></i>Ajouter aux favoris
+            </button>
+            <button class="btn btn-outline-success btn-sm">
+              <i class="fas fa-share me-1"></i>Partager
+            </button>
+          </div>
+          <small class="text-muted">
+            <i class="fas fa-clock me-1"></i>Dernière modification: Aujourd'hui
+          </small>
+        </div>
       </div>
     </div>
+  </div>
+</div>

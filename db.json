@@ -2,7 +2,7 @@
   "courses": [
     {
       "id": "1",
-      "nom": "Introduction à Angular",
+      "nom": "Introduction à Angular JS",
       "description": "Cours complet sur les bases d'Angular et ses composants standalone"
     },
     {

@@ -29,4 +29,13 @@ export class CourseListComponent implements OnInit {
       );
     }
   }
+
+  getRandomNumber(min: number, max: number): number {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  getRandomRating(): number {
+    // Returns a random rating between 3 and 5 (inclusive, with one decimal)
+    return Math.round((Math.random() * 2 + 3) * 10) / 10;
+  }
 }
