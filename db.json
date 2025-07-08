@@ -45,5 +45,37 @@
       "nom": "Performance Web",
       "description": "Optimisation des performances d'applications web"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "admin123",
+      "nom": "Administrateur",
+      "prenom": "Système",
+      "role": "admin",
+      "avatar": "https://via.placeholder.com/100x100/007bff/ffffff?text=A",
+      "dateCreation": "2025-01-01"
+    },
+    {
+      "id": 2,
+      "email": "user@example.com",
+      "password": "user123",
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "role": "user",
+      "avatar": "https://via.placeholder.com/100x100/28a745/ffffff?text=U",
+      "dateCreation": "2025-01-15"
+    },
+    {
+      "id": 3,
+      "email": "marie.martin@example.com",
+      "password": "marie123",
+      "nom": "Martin",
+      "prenom": "Marie",
+      "role": "user",
+      "avatar": "https://via.placeholder.com/100x100/17a2b8/ffffff?text=M",
+      "dateCreation": "2025-02-01"
+    }
   ]
 }

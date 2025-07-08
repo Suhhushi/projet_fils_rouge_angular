@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { CourseListComponent } from './components/course-list/course-list.component';
 import { CourseDetailComponent } from './components/course-detail/course-detail.component';
 import { CourseFormComponent } from './components/course-form/course-form.component';
+import { LoginComponent } from './components/login/login.component';
+import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseListComponent,
     CourseDetailComponent,
-    CourseFormComponent
+    CourseFormComponent,
+    LoginComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
