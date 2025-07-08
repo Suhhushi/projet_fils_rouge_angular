@@ -1,0 +1,49 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "nom": "Introduction à Angular",
+      "description": "Cours complet sur les bases d'Angular et ses composants standalone"
+    },
+    {
+      "id": "3",
+      "nom": "TypeScript Fundamentals",
+      "description": "Maîtrisez TypeScript pour des applications robustes"
+    },
+    {
+      "id": "4",
+      "nom": "Bootstrap 5",
+      "description": "Framework CSS pour des interfaces responsives"
+    },
+    {
+      "id": "5",
+      "nom": "API REST avec Node.js",
+      "description": "Création d'APIs REST performantes avec Node.js"
+    },
+    {
+      "id": "6",
+      "nom": "Gestion d'État avec RxJS",
+      "description": "Programmation réactive avec RxJS dans Angular"
+    },
+    {
+      "id": "7",
+      "nom": "Tests Unitaires Angular",
+      "description": "Stratégies de test pour applications Angular"
+    },
+    {
+      "id": "8",
+      "nom": "Déploiement d'Applications Web",
+      "description": "Techniques de déploiement et CI/CD"
+    },
+    {
+      "id": "9",
+      "nom": "Sécurité Web",
+      "description": "Bonnes pratiques de sécurité pour applications web"
+    },
+    {
+      "id": "10",
+      "nom": "Performance Web",
+      "description": "Optimisation des performances d'applications web"
+    }
+  ]
+}
