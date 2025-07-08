@@ -11,9 +11,9 @@
       </p>
     </div>
     <div class="text-end">
-      <button class="btn btn-warning btn-lg px-4 py-2 shadow-sm" 
+      <button *ngIf="isAdmin" class="btn btn-warning btn-lg px-4 py-2 shadow-sm" 
               routerLink="/course/new">
-        <i class="fas fa-plus me-2"></i>Nouveau Cours
+        <i class="fas fa-plus me-2 "></i>Nouveau Cours
       </button>
     </div>
   </div>
@@ -40,11 +40,11 @@
               <li><a class="dropdown-item" [routerLink]="['/course', course.id]">
                 <i class="fas fa-eye me-2"></i>Voir détails
               </a></li>
-              <li><a class="dropdown-item" [routerLink]="['/course', course.id, 'edit']">
+              <li><a *ngIf="isAdmin" class="dropdown-item" [routerLink]="['/course', course.id, 'edit']">
                 <i class="fas fa-edit me-2"></i>Modifier
               </a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger" (click)="deleteCourse(course.id!)">
+              <li><a class="dropdown-item text-danger" (click)="deleteCourse(course.id!)" *ngIf="isAdmin">
                 <i class="fas fa-trash me-2"></i>Supprimer
               </a></li>
             </ul>

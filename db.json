@@ -1,11 +1,6 @@
 {
   "courses": [
     {
-      "id": "1",
-      "nom": "Introduction à Angular JS",
-      "description": "Cours complet sur les bases d'Angular et ses composants standalone"
-    },
-    {
       "id": "3",
       "nom": "TypeScript Fundamentals",
       "description": "Maîtrisez TypeScript pour des applications robustes"

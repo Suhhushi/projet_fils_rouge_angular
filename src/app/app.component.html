@@ -36,10 +36,6 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center" 
                  href="#" role="button" data-bs-toggle="dropdown">
-                <img [src]="currentUser.avatar" 
-                     class="rounded-circle me-2" 
-                     width="32" height="32" 
-                     [alt]="currentUser.prenom">
                 <span>{{ currentUser.prenom }} {{ currentUser.nom }}</span>
                 <span class="badge bg-{{ currentUser.role === 'admin' ? 'warning' : 'success' }} ms-2">
                   {{ currentUser.role === 'admin' ? 'Admin' : 'User' }}

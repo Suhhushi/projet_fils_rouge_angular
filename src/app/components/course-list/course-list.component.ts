@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CourseService, Course } from '../../services/course.service';
+import { UserStateService } from '../../services/user-state.service';
+
 
 @Component({
   selector: 'app-course-list',
@@ -8,12 +10,17 @@ import { CourseService, Course } from '../../services/course.service';
   styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent implements OnInit {
-  courses: Course[] = [];
+  courses: Course[] = []; 
+  isAdmin: boolean = false;
 
-  constructor(private courseService: CourseService) {}
+  constructor(
+    private courseService: CourseService,
+    private userStateService: UserStateService
+  ) {}
 
   ngOnInit() {
     this.loadCourses();
+    this.isAdmin = this.userStateService.getAdminStatus();
   }
 
   loadCourses() {
