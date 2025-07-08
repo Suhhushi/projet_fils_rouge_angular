@@ -40,11 +40,11 @@
               <li><a class="dropdown-item" [routerLink]="['/course', course.id]">
                 <i class="fas fa-eye me-2"></i>Voir détails
               </a></li>
-              <li><a *ngIf="isAdmin" class="dropdown-item" [routerLink]="['/course', course.id, 'edit']">
+              <li><a class="dropdown-item" [routerLink]="['/course', course.id, 'edit']">
                 <i class="fas fa-edit me-2"></i>Modifier
               </a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger" (click)="deleteCourse(course.id!)" *ngIf="isAdmin">
+              <li><a class="dropdown-item text-danger" (click)="deleteCourse(course.id!)">
                 <i class="fas fa-trash me-2"></i>Supprimer
               </a></li>
             </ul>
@@ -82,11 +82,11 @@
             <i class="fas fa-eye me-2"></i>Voir le cours
           </button>
           <div class="btn-group" role="group">
-            <button class="btn btn-outline-warning" 
+            <button *ngIf="isAdmin" class="btn btn-outline-warning" 
                     [routerLink]="['/course', course.id, 'edit']">
               <i class="fas fa-edit me-1"></i>Modifier
             </button>
-            <button class="btn btn-outline-danger" 
+            <button *ngIf="isAdmin" class="btn btn-outline-danger" 
                     (click)="deleteCourse(course.id!)">
               <i class="fas fa-trash me-1"></i>Supprimer
             </button>

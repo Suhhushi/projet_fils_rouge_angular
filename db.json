@@ -1,16 +1,6 @@
 {
   "courses": [
     {
-      "id": "3",
-      "nom": "TypeScript Fundamentals",
-      "description": "Maîtrisez TypeScript pour des applications robustes"
-    },
-    {
-      "id": "4",
-      "nom": "Bootstrap 5",
-      "description": "Framework CSS pour des interfaces responsives"
-    },
-    {
       "id": "5",
       "nom": "API REST avec Node.js",
       "description": "Création d'APIs REST performantes avec Node.js"

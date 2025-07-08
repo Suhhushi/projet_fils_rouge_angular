@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CourseService, Course } from '../../services/course.service';
+import { UserStateService } from '../../services/user-state.service';
+
 
 @Component({
   selector: 'app-course-detail',
@@ -10,10 +12,12 @@ import { CourseService, Course } from '../../services/course.service';
 })
 export class CourseDetailComponent implements OnInit {
   course: Course | null = null;
+  isAdmin: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
-    private courseService: CourseService
+    private courseService: CourseService,
+    private userStateService: UserStateService
   ) {}
 
   ngOnInit() {
@@ -21,6 +25,7 @@ export class CourseDetailComponent implements OnInit {
     this.courseService.getCourse(id).subscribe(
       course => this.course = course
     );
+    this.isAdmin = this.userStateService.getAdminStatus();
   }
 
   getCurrentDate(): string {
