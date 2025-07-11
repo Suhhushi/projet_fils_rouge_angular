@@ -1,6 +1,6 @@
 # ProjetFilsRougeAngular
 
-## Development server
+## Start project
 
 ### To import all the dependeces : 
 
